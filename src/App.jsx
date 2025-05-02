@@ -70,19 +70,19 @@ const App = () => {
         {/* Mode Buttons */}
         <div className="mb-6 flex justify-center gap-4">
           <button
-            className="bg-red-500 hover:bg-red-600 text-white font-extrabold text-2xl rounded-full px-5 py-2 text-sm"
+            className="bg-red-500 hover:bg-red-600 text-white font-extrabold text-2xl rounded-full px-5 py-2"
             onClick={() => handleModeChange("pomodoro")}
           >
             Pomodoro
           </button>
           <button
-            className="bg-red-500 hover:bg-red-600 text-white font-extrabold text-2xl rounded-full px-5 py-2 text-sm"
+            className="bg-red-500 hover:bg-red-600 text-white font-extrabold text-2xl rounded-full px-5 py-2"
             onClick={() => handleModeChange("short")}
           >
             Short break
           </button>
           <button
-            className="bg-red-500 hover:bg-red-600 text-white font-extrabold text-2xl rounded-full px-5 py-2 text-sm"
+            className="bg-red-500 hover:bg-red-600 text-white font-extrabold text-2xl rounded-full px-5 py-2"
             onClick={() => handleModeChange("long")}
           >
             Long break
@@ -94,7 +94,7 @@ const App = () => {
             <span className="absolute text-6xl text-red-500">
               <GiTomato />
             </span>
-            <span className="absolute text-white text-3xl font-bold text-pink-900">
+            <span className="absolute text-white text-3xl font-bold text-red-900">
               {tomatoCount}
             </span>
           </div>
@@ -102,19 +102,19 @@ const App = () => {
         <div className="flex justify-center gap-6">
           <button
             onClick={() => setIsRunning(!isRunning)}
-            className="bg-red-500 hover:bg-red-600 w-10 h-10 flex items-center justify-center rounded-full text-white text-lg"
+            className="bg-red-500 hover:bg-red-600 w-16 h-16 flex items-center justify-center rounded-full text-white"
           >
             {isRunning ? (
-              <FaRegPauseCircle className="text-2xl" />
+              <FaRegPauseCircle className="text-5xl" />
             ) : (
-              <FaPlayCircle className="text-2xl" />
+              <FaPlayCircle className="text-5xl" />
             )}
           </button>
           <button
             onClick={handleReset}
-            className="bg-red-500 hover:bg-red-600 w-10 h-10 flex items-center justify-center rounded-full text-white text-lg"
+            className="bg-red-500 hover:bg-red-600 w-16 h-16 flex items-center justify-center rounded-full text-white"
           >
-            <RiResetLeftFill className="text-2xl" />
+            <RiResetLeftFill className="text-5xl" />
           </button>
         </div>
       </div>
